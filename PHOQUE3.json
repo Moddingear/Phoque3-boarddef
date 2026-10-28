@@ -1,0 +1,45 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m33",
+    "extra_flags": "-DSTM32C5 -DSTM32C5xx -DSTM32C552xx -DARDUINO_PHOQUE -DARDUINO_PHOQUE3 -DARDUINO_GENERIC_C552CEUX -DUSE_HALV2_DRIVER",
+    "f_cpu": "144000000L",
+    "mcu": "stm32c552ceu6",
+    "product_line": "STM32C552xx",
+    "variant": "PHOQUE3"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32C552CE",
+    "openocd_target": "stm32c5x",
+    "svd_path": "STM32C552xx.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "libopencm3",
+    "stm32cube"
+  ],
+  "name": "PHOQUE3 Brushless Driver",
+  "upload": {
+    "maximum_ram_size": 131072,
+    "maximum_size": 524288,
+    "protocol": "dfu",
+    "protocols": [
+      "stlink",
+      "jlink",
+      "cmsis-dap",
+      "blackmagic",
+      "mbed",
+      "dfu",
+      "serial"
+    ]
+  },
+  "url": "https://robonomicon.eu/phoque3",
+  "vendor": "Robonomicon"
+}
